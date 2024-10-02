@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+:root {
+  --main-color: #ffffff;
+  --second-color: #097718;
+  --black-color: #000000;
+  --border: 0.1rem solid rgba(255, 255, 255, 0.4);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+  background-color: var(--main-color);
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 3rem;
+  background-color: var(--second-color);
+}
+
+body {
+  background-color: var(--main-color);
+  height: 200vh;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: none;
+  transition: 0.3s ease;
+}
+/*!header start*/
+
+.header .logo img {
+  height: 10rem;
+}
+
+.header {
+  background-color: #f6f8fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header .navbar a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color: var(--black-color);
+  border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+  border-color: var(--second-color);
+  padding-bottom: 1rems;
+}
+
+.header .logo {
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent;
+  position: relative;
+}
+
+.header button{
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  background-color: transparent;
+  position: relative;
+
+}
+
+/*!header end*/
+
+.navbar a.active{
+  font-weight: bold;
+  color: var(--second-color);
+}
+/*!footer start*/
+
+.footer {
+  background-color: var(--second-color);
+  color: var(--main-color);
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/*!footer end*/
+
+/*!section start*/
+
+section{
+  display: none;
+  padding: 50px;
+  margin: 50px 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+section.active{
+  display: block;
+}
+section iframe{
+  padding: 50px 0;
+  margin: 50px;
+
+}
+/*!section end*/
+
